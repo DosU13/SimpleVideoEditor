@@ -11,25 +11,29 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="300"/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <SplitView IsPaneOpen="True"
-            DisplayMode="Inline"
-            OpenPaneLength="400">
-                <Grid>
-                    <MediaPlayerElement 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0"
+            xmlns:src="using:VideoEditor">
+            <src:ProjectLiblary x:Name="iProjectLiblary"/>
+        </Grid>
+        <MediaPlayerElement Grid.Row="0" Grid.Column="1"
                         x:Name="mediaPlayerElement" AutoPlay="False" Margin="5" 
                         HorizontalAlignment="Stretch" 
                         AreTransportControlsEnabled="True" />
-                </Grid>
-            </SplitView>
-            <Grid xmlns:src="using:VideoEditor">
-                <src:ProjectLiblary x:Name="iProjectLiblary"/>
-            </Grid>
+        <Grid Grid.Row="1" Grid.Column="0"
+              xmlns:src="using:VideoEditor">
+            <src:MusicCtrl x:Name="iMusicCtrl"/>
         </Grid>
-        <Grid Grid.Row="1" 
+        <Grid Grid.Row="1" Grid.Column="1"
               xmlns:src="using:VideoEditor">
             <src:TimeLine x:Name="iTimeLine"/>
         </Grid>
+        <TextBlock Grid.Row="2" Grid.ColumnSpan="2"
+                   Text="status" x:Name="Status"/>
     </Grid>
 </Page>

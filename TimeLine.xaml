@@ -11,10 +11,52 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="150"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0"/>
-        <Grid Grid.Row="1"/>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="1"
+                    Content="←" Click="MoveLeftPressed"/>
+            <Button Grid.Column="2"
+                    Click="MoveRightPressed"
+                    Content="→"/>
+            <Button Grid.Column="3"
+                    Click="DeletePressed"
+                    Content="Delete"/>
+            <Border Grid.Column="4"
+                    BorderThickness="1"
+                    BorderBrush="Gray"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Stretch"/>
+            <CheckBox Grid.Column="5"
+                      x:Name="RepeatCheckBox"
+                      Content="Repeat"/>
+        </Grid>
+        <GridView Grid.Row="2"
+            x:Name="TimelineGrid"    
+            ScrollViewer.HorizontalScrollBarVisibility="Auto"
+            ScrollViewer.HorizontalScrollMode="Enabled"
+            ScrollViewer.VerticalScrollMode="Disabled" 
+            SelectionChanged="OnSelectedChanged" 
+            CanReorderItems="True" 
+            AllowDrop="True">
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid Orientation="Vertical" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+        </GridView>
+        <Button Grid.Row="3" Content="Finish"
+                Click="FinishPresed" HorizontalAlignment="Right"/>
     </Grid>
 </UserControl>

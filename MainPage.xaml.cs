@@ -15,8 +15,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
 namespace VideoEditor
 {
     /// <summary>
@@ -29,9 +27,12 @@ namespace VideoEditor
         public MainPage()
         {
             this.InitializeComponent();
-            iTimeLine.compositionCrtl = compositionCrtl;
+            compositionCrtl.status = Status;
+            compositionCrtl.mediaPlayerElement = mediaPlayerElement;
+            iTimeLine.setCompCtrl(compositionCrtl);
             iProjectLiblary.compositionCtrl = compositionCrtl;
-            compositionCrtl.Change += delegate (object sender, EventArgs arg)
+            iMusicCtrl.compositionCrtl = compositionCrtl;
+            compositionCrtl.ChangeRender += delegate (object sender, EventArgs arg)
             {
                 UpdateMediaElementSource();
             };

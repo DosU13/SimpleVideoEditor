@@ -26,16 +26,12 @@ namespace VideoEditor
 {
     public sealed partial class ProjectLiblary : UserControl
     {
-        public ListenableArray mediaFiles = new ListenableArray();
+        public List<IStorageFile> mediaFiles = new List<IStorageFile>();
         public CompositionController compositionCtrl;
 
         public ProjectLiblary()
         {
             this.InitializeComponent();
-            mediaFiles.Change += delegate (object sender, EventArgs arg)
-            {
-                Update();
-            };
         }
 
         private async void Update()
@@ -73,6 +69,7 @@ namespace VideoEditor
             {
                 mediaFiles.AddRange(files.ToList());
             }
+            Update();
         }
 
         private void ToTimeLine_Click(object sender, RoutedEventArgs e)
@@ -80,12 +77,12 @@ namespace VideoEditor
             var range = Liblary.SelectedRanges;
             if(range.Count > 0)
             {
-                ArrayList selected = new ArrayList();
+                List<IStorageFile> selected = new List<IStorageFile>();
                 foreach (var i in range)
                 {
                     selected.AddRange(mediaFiles.GetRange(i.FirstIndex, i.LastIndex - i.FirstIndex + 1));
                 }
-                compositionCtrl.addFiles(selected);
+                compositionCtrl.AddPhotos(selected); 
             }
         }
     }
