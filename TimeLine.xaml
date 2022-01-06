@@ -22,8 +22,6 @@
                 <ColumnDefinition Width="60"/>
                 <ColumnDefinition Width="60"/>
                 <ColumnDefinition Width="60"/>
-                <ColumnDefinition Width="20"/>
-                <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
             <Button Grid.Column="1"
                     Content="←" Click="MoveLeftPressed"/>
@@ -33,14 +31,6 @@
             <Button Grid.Column="3"
                     Click="DeletePressed"
                     Content="Delete"/>
-            <Border Grid.Column="4"
-                    BorderThickness="1"
-                    BorderBrush="Gray"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Stretch"/>
-            <CheckBox Grid.Column="5"
-                      x:Name="RepeatCheckBox"
-                      Content="Repeat"/>
         </Grid>
         <GridView Grid.Row="2"
             x:Name="TimelineGrid"    
@@ -57,6 +47,7 @@
             </GridView.ItemsPanel>
         </GridView>
         <Button Grid.Row="3" Content="Finish"
+                Width="150" VerticalAlignment="Stretch"
                 Click="FinishPresed" HorizontalAlignment="Right"/>
     </Grid>
 </UserControl>
