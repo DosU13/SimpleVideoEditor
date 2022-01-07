@@ -29,7 +29,7 @@ Pros:
   </tr>
  </table>
  
- ## Video rendered by this app
+ ## Videos rendered by this app
 <table>
   <tr>
     <td>Simple slide show</td>
