@@ -13,7 +13,7 @@ But, one key difference: durations of images edited in one text editor pane, whi
 
 ### Solution: all duration are going to set in one text box:
 * Simple, easy. You can select, copy, paste. There are a lot variety of text editors which gives useful opportunities. (format, replace, remove appearances)
-* All durations are saved in text editor, so you can do anything with clips, durations wouldn't change
+* All durations are saved in text box, so you can do anything with clips, durations wouldn't change
 * It is just a text, so you can easily share it across the messengers
 
 
