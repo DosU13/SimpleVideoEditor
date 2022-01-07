@@ -12,7 +12,6 @@ But, one key difference: durations of images edited in one text editor pane, whi
 * You friend made a good timings. You like it. Do you think of your friend sharing the timings, but how he is going to share? A whole project?
 
 ### Solution: all duration are going to set in one text box:
-Pros:
 * Simple, easy. You can select, copy, paste. There are a lot variety of text editors which gives useful opportunities. (format, replace, remove appearances)
 * All durations are saved in text editor, so you can do anything with clips, durations wouldn't change
 * It is just a text, so you can easily share it across the messengers
