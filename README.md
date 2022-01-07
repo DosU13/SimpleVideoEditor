@@ -29,10 +29,17 @@ Pros:
   </tr>
  </table>
  
- [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/W2aWfTjlagE/0.jpg)](https://www.youtube.com/watch?v=W2aWfTjlagE)
+ ## Video rendered by this app
+<table>
+  <tr>
+    <td>Simple slide show</td>
+    <td>If we will be creative we can make more amzing things</td>
+  </tr>
+  <tr>
+    <td> [![Simple slide show](https://img.youtube.com/vi/5c-lNaOw-pc/0.jpg)](https://www.youtube.com/watch?v=5c-lNaOw-pc)</td>
+    <td> [![Creative slide show](https://img.youtube.com/vi/W2aWfTjlagE/0.jpg)](https://www.youtube.com/watch?v=W2aWfTjlagE)</td>
+  </tr>
+ </table>
  
- <iframe width="560" height="315"
-src="https://youtu.be/5c-lNaOw-pc" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+ [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/W2aWfTjlagE/0.jpg)](https://www.youtube.com/watch?v=W2aWfTjlagE)
+
