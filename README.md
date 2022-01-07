@@ -36,8 +36,16 @@ Pros:
     <td>If we will be creative we can make more amzing things</td>
   </tr>
   <tr>
-    <td> [![Simple slide show](https://img.youtube.com/vi/5c-lNaOw-pc/0.jpg)](https://www.youtube.com/watch?v=5c-lNaOw-pc)</td>
-    <td> [![Creative slide show](https://img.youtube.com/vi/W2aWfTjlagE/0.jpg)](https://www.youtube.com/watch?v=W2aWfTjlagE)</td>
+    <td>
+      <div align="center">
+        <a href="https://www.youtube.com/watch?v=5c-lNaOw-pc"><img src="https://img.youtube.com/vi/5c-lNaOw-pc/0.jpg" alt="IMAGE ALT TEXT"></a>
+      </div>
+    </td>
+    <td>
+      <div align="center">
+        <a href="https://www.youtube.com/watch?v=W2aWfTjlagE"><img src="https://img.youtube.com/vi/W2aWfTjlagE/0.jpg" alt="IMAGE ALT TEXT"></a>
+      </div>
+    </td>
   </tr>
  </table>
  
