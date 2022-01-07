@@ -7,7 +7,7 @@ Simple slideshow maker, simple and familiar user interface.
 But, one key difference: durations of images edited in one text editor pane, which is more flexible and saves time.
 
 ### Understanding the problems
-* Setting the duration of every clip by hand is very time consuming if there are hundreds of clips
+* Setting the duration of every clip by hand is very time consuming
 * You made a slideshow, but want to change or reorder some images, so you should set timings again
 * You friend made a good timings. You like it. Do you think of your friend sharing the timings, but how he is going to share? A whole project?
 
