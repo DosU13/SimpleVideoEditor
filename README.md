@@ -32,7 +32,7 @@ But, one key difference: durations of images edited in one text editor pane, whi
 <table>
   <tr>
     <td>Simple slide show</td>
-    <td>If we will be creative we can make amzing things</td>
+    <td>If we will be creative we can do amazing things</td>
   </tr>
   <tr>
     <td>
