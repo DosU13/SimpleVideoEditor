@@ -24,7 +24,7 @@ But, one key difference: durations of images edited in one text editor pane, whi
     <td>Main window</td>
   </tr>
   <tr>
-    <td><img src="Снимки%20экрана/Screenshot%202022-01-07%20070343.png" width=*></td>
+    <td><img src="Снимки%20экрана/MainPage.png" width=*></td>
   </tr>
  </table>
  
